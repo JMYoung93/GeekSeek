@@ -53,4 +53,4 @@ Login.init(
   }
 );
 
-module.exports = User;
+module.exports = Login;

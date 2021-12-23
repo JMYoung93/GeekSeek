@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require("sequelize");
+const { Model, DataTypes, Sequelize } = require("sequelize");
 const sequelize = require("../config/connection");
 
 class User extends Model {}
@@ -19,13 +19,45 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    gender: {},
-    looking_for: {},
-    age: {},
-    ethnicity: {},
-    education: {},
-    children: {},
-    description: {},
+    gender: {
+      type: Sequelize.ENUM,
+      values: ["male", "female", "other"],
+    },
+    looking_for: {
+      type: Sequelize.ENUM,
+      values: ["male", "female", "other"],
+    },
+    age: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
+    ethnicity: {
+      type: Sequelize.ENUM,
+      values: [
+        "African American",
+        "Asian",
+        "Caucasian",
+        "Hispanic/Latino",
+        "Other",
+      ],
+    },
+    education: {
+      type: Sequelize.ENUM,
+      values: [
+        "Some High School",
+        "High School Graduate",
+        "Some College",
+        "Bachelor's (Undergraduate) Degree",
+        "Master's Degree",
+        "Doctorate Degree",
+      ],
+    },
+    children: {
+      type: DataTypes.BOOLEAN,
+    },
+    description: {
+      type: DataTypes.STRING,
+    },
     login_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -43,4 +75,4 @@ User.init(
   }
 );
 
-module.exports = Project;
+module.exports = User;
