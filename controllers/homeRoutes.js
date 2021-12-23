@@ -42,10 +42,10 @@ router.get('/profile', withAuth, async (req, res) => {
 
 router.get('/', (req, res) => {
 
-    if (req.session.logged_in) {
-      res.redirect('/main');
-      return;
-    }
+    // if (req.session.logged_in) {
+    //   res.redirect('/main');
+    //   return;
+    // }
     // console.log("test")
     res.render('login');
 });

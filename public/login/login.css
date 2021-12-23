@@ -1,7 +1,6 @@
 html,body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  }
-  .hero.is-fullheight {
+
     background: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
@@ -10,4 +9,5 @@ html,body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+   
   }
