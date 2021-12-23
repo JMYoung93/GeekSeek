@@ -46,11 +46,12 @@ router.get('/', (req, res) => {
       res.redirect('/main');
       return;
     }
-  
+    // console.log("test")
     res.render('login');
 });
 
 router.get('/newuser', (req,res)=>{
+    // console.log("test")
     res.render('newAccount')
 })
 
