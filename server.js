@@ -4,7 +4,6 @@ const path = require("path");
 
 const sequelize = require("./config/connection");
 
-const Login = require("./models/Login");
 const User = require("./models/User");
 const Questions = require("./models/Questions");
 
