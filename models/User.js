@@ -1,3 +1,8 @@
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
+
+class User extends Model {}
+
 User.init(
   {
     id: {
@@ -29,11 +34,11 @@ User.init(
       allowNull: false,
     },
     gender: {
-      type: Sequelize.ENUM,
+      type: DataTypes.ENUM,
       values: ["male", "female", "other"],
     },
     looking_for: {
-      type: Sequelize.ENUM,
+      type: DataTypes.ENUM,
       values: ["male", "female", "other"],
     },
     age: {
@@ -41,7 +46,7 @@ User.init(
       allowNull: false,
     },
     ethnicity: {
-      type: Sequelize.ENUM,
+      type: DataTypes.ENUM,
       values: [
         "African American",
         "Asian",
@@ -51,7 +56,7 @@ User.init(
       ],
     },
     education: {
-      type: Sequelize.ENUM,
+      type: DataTypes.ENUM,
       values: [
         "Some High School",
         "High School Graduate",
