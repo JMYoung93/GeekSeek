@@ -10,4 +10,4 @@ Questions.belongsTo(User, {
   foreignKey: "user_id",
 });
 
-module.exports = { Login, User, Questions };
+module.exports = { User, Questions };
