@@ -1,0 +1,44 @@
+[
+{
+    "tvPreferences": "Game shows, Anime, Sci-fi and fantasy",
+    "favoriteTVShows": "The Witcher",
+    "favoriteMoviesTypes": "Sci-Fi, Comedy, Romantic Comedies",
+    "musicTypes": "Hip-Hop, R&B, Funk, Soul",
+    "readingSelection": "Young Adult",
+    "favoriteBooks": "The Lightning Thief",
+    "ideaOfFun": "Go Kart Racing",
+    "Hobbies": "Playing video games, Watching movies & Tv Shows"
+  },
+  {
+    "tvPreferences": "Anime, Drama, Murder Mystery",
+    "favoriteTVShows": "Black Clover, The Boondocks, The Rookie",
+    "favoriteMoviesTypes": "Action, Fantasy, Suspense",
+    "musicTypes": "EDM, Alt-Rock",
+    "readingSelection": "Manga",
+    "favoriteBooks": "Manga",
+    "ideaOfFun":
+      "Playing video games, Cooking new recipes, Studio Ghibli movie marathon",
+    "Hobbies":
+      "Gaming for absurd amounts of time, Watching anime, Learning new coding languages"
+  },
+  {
+    "tvPreferences": "I can't watch anything with a laugh track",
+    "favoriteTVShows": "Breaking Bad, Its Always Sunny in Philadelphia",
+    "favoriteMoviesTypes": "Dramas, Action",
+    "musicTypes": "Pop punk, Indie Rock",
+    "readingSelection": "Mostly nonfiction",
+    "favoriteBooks": "Bad Blood, Catch and Kill, Into Thin Air",
+    "ideaOfFun": "Chilling with a group of friends",
+    "Hobbies": "Video Games, Chess, Playing Tennis, Watching movies"
+  },
+  {
+    "tvPreferences": "Crime, Drama",
+    "favoriteTVShows": "That 70s Show",
+    "favoriteMoviesTypes": "Comedy, Psychological Thrillers",
+    "musicTypes": "Hip hop, rap, r&b",
+    "readingSelection": "Non-ficton",
+    "favoriteBooks": "The Silent Patient, Where the Crawdads Sing",
+    "ideaOfFun": "Bottomless mimosa Sunday Funday, hanging with   friends",
+    "Hobbies": "Coding, traveling, shopping, eating"
+  }
+]
