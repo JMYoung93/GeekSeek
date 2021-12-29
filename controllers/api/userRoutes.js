@@ -28,7 +28,6 @@ router.post('/', async (req, res) => {
         return;
       }
       
-    //checkPassword function should be created in the User model
       const validPassword = await userData.checkPassword(req.body.password);
   
       if (!validPassword) {

@@ -21,7 +21,7 @@ The purest kind of love there is, when two "Geeks," "Nerds," or other socially-a
 
 ## Contributer
 
-- [Gabriel Guerin](https://github.com/ngolston)
+- [Gabriel Guerin](https://github.com/gjguerin96)
 - [Jeffrey Young](https://github.com/JMYoung93)
 - [Nicholas Golston](https://github.com/ngolston)
 - [Thao Nguyen](https://github.com/teeteathao)
