@@ -1,7 +1,13 @@
-const { Model, DataTypes } = require("sequelize");
+const { Model, DataTypes, Sequelize } = require("sequelize");
+const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection");
 
-class User extends Model {}
+class User extends Model {
+  checkPassword(loginPw) {
+    return bcrypt.compareSync(loginPw, this.password);
+  }
+}
+
 
 User.init(
   {
@@ -9,6 +15,7 @@ User.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
+      autoIncrement: true,
     },
     email: {
       type: DataTypes.STRING,
@@ -61,13 +68,14 @@ User.init(
         "Some High School",
         "High School Graduate",
         "Some College",
-        "Bachelor's (Undergraduate) Degree",
-        "Master's Degree",
+        "Bachelors (Undergraduate) Degree",
+        "Masters Degree",
         "Doctorate Degree",
       ],
     },
     children: {
-      type: DataTypes.BOOLEAN,
+      type: DataTypes.ENUM,
+      values: ["Yes", "No"],
     },
     description: {
       type: DataTypes.STRING,
