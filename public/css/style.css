@@ -1,10 +1,10 @@
 .hero {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url('https://images.unsplash.com/uploads/14133952228810cd761f5/91656487?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80') no-repeat center center fixed;
+    ), url('https://images.unsplash.com/uploads/14133952228810cd761f5/91656487?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80') no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -18,4 +18,35 @@
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+}
+
+body {
+  color: white;
+}
+
+.textarea {
+  display: block;
+  max-width: 50%;
+  min-width: 50%;
+  padding: calc(.75em - 1px);
+  resize: vertical;
+}
+
+h1 {
+  font-size: 2.5em;
+  padding-bottom: 60px;
+  color: white;
+}
+h2 {
+  font-size: 1.2em;
+  padding-bottom: 80px;
+  color: white;
+}
+.label {
+  font-size: 1.2em;
+  font-weight: 200;
+  color: white;
+}
+.input {
+  width: 300px;
 }
