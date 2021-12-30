@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="login.css">
-    <title>GeekSeek</title>
-</head>
-<body>
-    <section class="hero is-fullheight">
+<div style="background-image: url('https://images.unsplash.com/photo-1542779283-429940ce8336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG9rZWJhbGx8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'); background-size: cover">
+<section class="hero is-fullheight">
   <header>
       
     <h1 class="has-text-centered">Welcome New Geek!</h1>
@@ -18,12 +8,12 @@
 
     <div class="field is-horizontal">
         <div class="field-label is-normal">
-          <label class="label">* Name</label>
+          <label class="label" >* Name</label>
         </div>
         <div class="field-body">
           <div class="field">
             <p class="control is-expanded has-icons-left">
-              <input class="input" type="text" placeholder="Name">
+              <input class="input" type="text" id="name" placeholder="Name">
               <span class="icon is-small is-left">
                 <i class="fas fa-user"></i>
               </span>
@@ -34,7 +24,7 @@
           </div>
           <div class="field">
             <p class="control is-expanded has-icons-left has-icons-right">
-              <input class="input is-success" type="email" placeholder="something@example.com" >
+              <input class="input is-success" type="email" id="email" placeholder="something@example.com" >
               <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
@@ -56,7 +46,7 @@
               <p class="control">
               </p>
               <p class="control is-expanded">
-                <input class="input" type="tel" placeholder="Be as nerdy as you want!">
+                <input class="input" type="tel" id="username" placeholder="Be as nerdy as you want!">
               </p>
             </div>
           </div>
@@ -70,7 +60,7 @@
         <div class="field-body">
           <div class="field is-narrow">
             <div class="control">
-              <div class="select is-fullwidth">
+              <div class="select is-fullwidth" id="gender">
                 <select>
                   <option>Male</option>
                   <option>Female</option>
@@ -91,7 +81,7 @@
         <div class="field-body">
           <div class="field is-narrow">
             <div class="control">
-              <div class="select is-fullwidth">
+              <div class="select is-fullwidth" id="seeking_gender">
                 <select>
                   <option>Male</option>
                   <option>Female</option>
@@ -110,7 +100,7 @@
         <div class="field-body">
           <div class="field">
             <div class="control">
-              <input class="input" type="text" placeholder="Anime? Crime TV?">
+              <input class="input" type="text" id="tvpref" placeholder="Anime? Crime TV?">
             </div>
           </div>
         </div>
@@ -123,7 +113,7 @@
         <div class="field-body">
           <div class="field">
             <div class="control">
-              <input class="input" type="text" placeholder="It's ok to say 'The Bachelor'">
+              <input class="input" type="text" id="tvshow" placeholder="It's ok to say 'The Bachelor'">
             </div>
           </div>
         </div>
@@ -136,7 +126,7 @@
         <div class="field-body">
           <div class="field">
             <div class="control">
-              <input class="input" type="text" placeholder="Which movie made you ugly cry?">
+              <input class="input" type="text" id="movie" placeholder="Which movie made you ugly cry?">
             </div>
           </div>
         </div>
@@ -149,7 +139,7 @@
         <div class="field-body">
           <div class="field">
             <div class="control">
-              <input class="input" type="text" placeholder="What genre makes you jam out?">
+              <input class="input" type="text" id="music" placeholder="What genre makes you jam out?">
             </div>
           </div>
         </div>
@@ -162,7 +152,7 @@
         <div class="field-body">
           <div class="field">
             <div class="control">
-              <input class="input" type="text" placeholder="Staring at dead trees is fun.">
+              <input class="input" type="text" id="reading" placeholder="Staring at dead trees is fun.">
             </div>
           </div>
         </div>
@@ -175,7 +165,7 @@
         <div class="field-body">
           <div class="field">
             <div class="control">
-              <input class="input" type="text" placeholder="There's more than Game of Thrones?">
+              <input class="input" type="text" id="book" placeholder="There's more than Game of Thrones?">
             </div>
           </div>
         </div>
@@ -188,7 +178,7 @@
         <div class="field-body">
           <div class="field">
             <div class="control">
-              <input class="input" type="text" placeholder="Hanging out with your cat counts.">
+              <input class="input" type="text" id="hobbies" placeholder="Hanging out with your cat counts.">
             </div>
           </div>
         </div>
@@ -201,7 +191,7 @@
         <div class="field-body">
           <div class="field">
             <div class="control">
-              <input class="input" type="text" placeholder="Going outside? Staying in?">
+              <input class="input" type="text" id="fun" placeholder="Going outside? Staying in?">
             </div>
           </div>
         </div>
@@ -214,7 +204,7 @@
         <div class="field-body">
           <div class="field">
             <div class="control">
-              <textarea class="textarea" placeholder="Seriously if you put 'I love hiking' I'm gonna lose it."></textarea>
+              <textarea class="textarea" id="geek" placeholder="Seriously if you put 'I love hiking' I'm gonna lose it."></textarea>
             </div>
           </div>
         </div>
@@ -227,15 +217,13 @@
         <div class="field-body">
           <div class="field">
             <div class="control">
-              <button class="button is-primary">
+              <button class="button is-primary" id="submit_btn">
                 Submit
               </button>
             </div>
           </div>
         </div>
       </div>
-
-    </section>
-</body>
-
-</html>
+</section>
+</div>
+<script src="/js/newUser.js"></script>
