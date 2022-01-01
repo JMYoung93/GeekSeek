@@ -50,3 +50,7 @@ h2 {
 .input {
   width: 300px;
 }
+
+.user-photo {
+  border-radius: 20%;
+}
