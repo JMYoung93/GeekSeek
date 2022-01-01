@@ -10,7 +10,7 @@ The user will create a profile about themselves by uploading a photo and answer 
 The purest kind of love there is, when two "Geeks," "Nerds," or other socially-awkward people fall in love. This type of love usually lasts long due to the fact that Geeks are Loyal, Trusting, and Understanding creatures that will accept you for whoever you are. Sure, they may embarrass you on occasion, or confuse you when they try to talk in binary/klingon, but in the end Geek Love tends to last longer than normal high school romance.
 
 ## Visual 
-
+<img src="https://i.ibb.co/PDYLmjd/First-Page.png" alt="First-Page" border="0"></a>
 
 ## Built With
 
@@ -18,6 +18,7 @@ The purest kind of love there is, when two "Geeks," "Nerds," or other socially-a
 - CSS
 - JavaScript
 - Handlebars
+- Bulma
 
 ## Contributer
 
@@ -32,4 +33,4 @@ The purest kind of love there is, when two "Geeks," "Nerds," or other socially-a
 
 ## Acknowledgement
 
-
+- [Bulma Framework](https://bulma.io/)
