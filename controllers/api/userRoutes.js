@@ -5,7 +5,7 @@ router.post('/newuser', async (req, res) => {
     // console.log("test")
     try {
       const userData = await User.create(req.body);
-  
+      console.log(userData)
       req.session.save(() => {
         req.session.user_id = userData.id;
         req.session.logged_in = true;
@@ -17,7 +17,7 @@ router.post('/newuser', async (req, res) => {
     }
 });
 
-router.post('/', async (req, res) => {
+router.post('/login', async (req, res) => {
     try {
       const userData = await User.findOne({ where: { email: req.body.email } });
   

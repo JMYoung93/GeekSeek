@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
-    <title>GeekSeek</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- Bulma Version 0.9.0-->
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="./login.css">
-    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
-    <style>
-    .columns:nth-child(2)
-    {margin-top: -10rem;}
-    </style>
-  </head>
-  <body>
+
     <section class="hero is-small">
       <div class="hero-body">
         <div class="container has-text-centered">
@@ -33,6 +13,8 @@
     </section>
     <section class="container">
       <div class="columns features">
+
+        {{#each users as |user| }}
         <div class="column is-4">
           <div class="card is-shady">
             <div class="card-image">
@@ -42,14 +24,16 @@
             </div>
             <div class="card-content">
               <div class="content">
-                <h4>This chick is artsy</h4>
-                <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
+                <h4>{{ first_name }}</h4>
+                <p>{{ description }}</p>
                 <span class="button is-link modal-button" data-target="modal-image2">Image modal</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="column is-4">
+        {{/each}}
+
+        {{!-- <div class="column is-4">
           <div class="card is-shady">
             <div class="card-image">
               <figure class="image is-4by3">
@@ -116,8 +100,8 @@
               </div>
               
             </div>
-          </div>
-        </div>
+          </div> --}}
+        {{!-- </div> --}}
       </div>
     </section>
     <footer>
@@ -170,5 +154,3 @@
         OverlayScrollbars(document.querySelectorAll("body"), { });
         });
         </script>  
-  </body>
-</html>
