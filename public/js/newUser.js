@@ -38,7 +38,7 @@ const submitFormHandler = async (event) => {
     geek
   }
   
-  console.log(userObj)
+  // console.log(userObj)
 
   fetch('/api/users/newuser',{
     method:'POST',
