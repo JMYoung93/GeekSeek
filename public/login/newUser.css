@@ -1,12 +1,5 @@
-.hero.is-fullheight {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ), url('https://images.unsplash.com/photo-1542779283-429940ce8336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG9rZWJhbGx8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+html {
+    background: linear-gradient(0.25turn, #6a5ce6, #f2b3fa);
   }
 
 body {
@@ -14,9 +7,7 @@ body {
   }
   
   .textarea {
-    display: block;
-    max-width: 50%;
-    min-width: 50%;
+    display: flex;
     padding: calc(.75em - 1px);
     resize: vertical;
 }
@@ -37,5 +28,13 @@ body {
     color: white;
   }
   .input {
-    width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: 34%;
+  margin-bottom: 3%;
+  width: 30%;
   }
+
+  .drop-down{
+      margin-left: 21.5%;
+      }
