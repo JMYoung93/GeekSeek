@@ -15,6 +15,7 @@
       <div class="columns features">
 
         {{#each users as |user| }}
+        {{!-- {{#if user.id != req.session.id}} --}}
         <div class="column is-4">
           <div class="card is-shady">
             <div class="card-image">
@@ -31,6 +32,7 @@
             </div>
           </div>
         </div>
+        {{!-- {{/if}} --}}
         {{/each}}
 
         <a href="/profile/{{myId}}" class="button is-link modal-button" >My Profile</a>

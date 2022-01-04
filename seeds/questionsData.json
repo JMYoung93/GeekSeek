@@ -20,7 +20,12 @@
     "ideaOfFun":
       "Playing video games, Cooking new recipes, Studio Ghibli movie marathon",
     "Hobbies":
+<<<<<<< HEAD
       "Gaming for absurd amounts of time, Watching anime, Learning new coding languages",
+=======
+      "Gaming for absurd amounts of time, Watching anime, Learning new coding languages"
+      ,
+>>>>>>> 8ef40434daa3a61eb1dc22c5a5047838de398f09
     "user_id": 2
   },
   {
