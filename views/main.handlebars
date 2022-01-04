@@ -26,12 +26,14 @@
               <div class="content">
                 <h4>{{ first_name }}</h4>
                 <p>{{ description }}</p>
-                <span class="button is-link modal-button" data-target="modal-image2">Image modal</span>
+                <a href="/profile/{{user.id}}" class="button is-link modal-button" >Profile</a>
               </div>
             </div>
           </div>
         </div>
         {{/each}}
+
+        <a href="/profile/{{myId}}" class="button is-link modal-button" >My Profile</a>
 
         {{!-- <div class="column is-4">
           <div class="card is-shady">

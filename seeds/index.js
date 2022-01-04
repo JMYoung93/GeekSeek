@@ -14,8 +14,8 @@ const seedDatabase = async () => {
 
   for (const questions of questionsData) {
     await Questions.create({
-      ...questions,
-      user_id: users[Math.floor(Math.random() * users.length)].id,
+      ...questions
+      // user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
 
