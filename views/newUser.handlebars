@@ -1,3 +1,50 @@
+  <style>html {
+    background: linear-gradient(0.25turn, #6a5ce6, #f2b3fa);
+  }
+
+body {
+    color: white;
+  }
+  
+  .textarea {
+    display: flex;
+    padding: calc(.75em - 1px);
+    resize: vertical;
+}
+
+  h1 {
+    font-size: 2.5em;
+    padding-bottom: 60px;
+    color: white;
+  }
+  h2 {
+    font-size: 1.2em;
+    padding-bottom: 80px;
+    color: white;
+  }
+  .description{
+    margin-left: 17%;
+  }
+  .desc-label{
+    margin-left: 12%;
+  }
+  .label {
+    font-size: 1.2em;
+    font-weight: 200;
+    color: white;
+  }
+  .input {
+  display: block;
+  margin-left: auto;
+  margin-right: 34%;
+  margin-bottom: 3%;
+  width: 30%;
+  }
+
+  .drop-down{
+      margin-left: 21.5%;
+      }</style>
+  
   <header>
       
     <h1 class="has-text-centered">Welcome New Geek!</h1>
@@ -7,7 +54,15 @@
    <div class="container">
      <div class="field-body">
     <div class="field-label is-normal">
-      <label class="label" >* Name (First and Last)</label>
+      <label class="label" >* Name (First)</label>
+    </div>
+     <input class="input">
+   </div>
+
+    <div class="container">
+     <div class="field-body">
+    <div class="field-label is-normal">
+      <label class="label" >* Name (Last)</label>
     </div>
      <input class="input">
    </div>
@@ -24,13 +79,6 @@
       <label class="label" >* Password</label>
     </div>
      <input class="input" type="tel" id="password" placeholder="Super frickin' secret">
-   </div>
-
-   <div class="field-body">
-    <div class="field-label is-normal">
-      <label class="label" >* Username</label>
-    </div>
-     <input class="input" type="tel" id="username" placeholder="Be as nerdy as you want!">
    </div>
 
    <div class="field is-horizontal drop-down">
@@ -66,6 +114,56 @@
               <option>Male</option>
               <option>Female</option>
               <option>I don't care what's in your pants</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="field-body">
+    <div class="field-label is-normal">
+      <label class="label" >* My Age is</label>
+    </div>
+     <input class="input">
+   </div>
+
+    <div class="field is-horizontal drop-down">
+    <div class="field-label is-normal">
+      <label class="label">Ethnicity</label>
+    </div>
+    <div class="field-body">
+      <div class="field is-narrow">
+        <div class="control">
+          <div class="select is-fullwidth" id="seeking_gender">
+            <select>
+              <option>African-American</option>
+              <option>Asian</option>
+              <option>Caucasian</option>
+              <option>Hispanic/Latino</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="field is-horizontal drop-down">
+    <div class="field-label is-normal">
+      <label class="label">My Education Level Is</label>
+    </div>
+    <div class="field-body">
+      <div class="field is-narrow">
+        <div class="control">
+          <div class="select is-fullwidth" id="seeking_gender">
+            <select>
+              <option>Some High School</option>
+              <option>High School Graduate</option>
+              <option>Some College</option>
+              <option>Bachelors (Undergraduate) Degree</option>
+              <option>Masters Degree</option>
+              <option>Doctorate Degree</option>
             </select>
           </div>
         </div>
@@ -117,9 +215,9 @@
 
    <div class="field is-horizontal">
     <div class="field-label is-normal">
-      <label class="label">What kind of Geek are you?</label>
+      <label class="label desc-label">What kind of Geek are you?</label>
     </div>
-    <div class="field-body">
+    <div class="field-body description">
       <div class="field">
         <div class="control">
           <textarea class="textarea" id="geek" placeholder="Seriously if you put 'I love hiking' I'm gonna lose it."></textarea>
@@ -143,6 +241,7 @@
     </div>
   </div>
    </div>
+
 
 {{!-- </div> --}}
 <script src="/js/newUser.js"></script>
