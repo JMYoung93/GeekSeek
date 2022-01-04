@@ -7,7 +7,8 @@
     "readingSelection": "Young Adult",
     "favoriteBooks": "The Lightning Thief",
     "ideaOfFun": "Go Kart Racing",
-    "Hobbies": "Playing video games, Watching movies & Tv Shows"
+    "Hobbies": "Playing video games, Watching movies & Tv Shows",
+    "user_id": 1
   },
   {
     "tvPreferences": "Anime, Drama, Murder Mystery",
@@ -20,6 +21,8 @@
       "Playing video games, Cooking new recipes, Studio Ghibli movie marathon",
     "Hobbies":
       "Gaming for absurd amounts of time, Watching anime, Learning new coding languages"
+      ,
+    "user_id": 2
   },
   {
     "tvPreferences": "I can't watch anything with a laugh track",
@@ -29,7 +32,8 @@
     "readingSelection": "Mostly nonfiction",
     "favoriteBooks": "Bad Blood, Catch and Kill, Into Thin Air",
     "ideaOfFun": "Chilling with a group of friends",
-    "Hobbies": "Video Games, Chess, Playing Tennis, Watching movies"
+    "Hobbies": "Video Games, Chess, Playing Tennis, Watching movies",
+    "user_id": 3
   },
   {
     "tvPreferences": "Crime, Drama",
@@ -39,6 +43,7 @@
     "readingSelection": "Non-ficton",
     "favoriteBooks": "The Silent Patient, Where the Crawdads Sing",
     "ideaOfFun": "Bottomless mimosa Sunday Funday, hanging with   friends",
-    "Hobbies": "Coding, traveling, shopping, eating"
+    "Hobbies": "Coding, traveling, shopping, eating",
+    "user_id": 4
   }
 ]

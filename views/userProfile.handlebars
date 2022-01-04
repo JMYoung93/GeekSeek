@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -23,9 +23,9 @@
             border: 1px solid #ccc;
         }
     </style>
-</head>
+</head> --}}
 
-<body>
+{{!-- <body> --}}
     <section class="hero is-fullheight is-default is-bold">
         <!-- Navbar -->
             <div class="hero-head">
@@ -84,7 +84,7 @@
         <div class="hero-body">
             <div class="container">
                 <h1 class="title is-2 has-text-centered test">
-                    Greetings, I am <em>User Name</em>
+                    Greetings, I am <em>{{ first_name }} {{ last_name }}</em>
                 </h1>
                 <div class="columns is-centered">
                     <div class="column is-5">
@@ -96,39 +96,41 @@
                             What kind of geek are you?
                         </h2>
                     </div>
+                    {{!-- <div style="font-color:black"> --}}
                     <div class="column is-6 is-offset-1">
                        <br>
-                        <h2 class="subtitle is-4 box-background-color">
-                            Gender: 
+                        <h2 style="color:black" class="is-4 box-background-color">
+                            Gender: {{ gender }}
                         </h2>
-                        <h2 class="subtitle is-4 box-background-color">
-                            I am looking for:
+                        <h2 style="color:black" class="is-4 box-background-color">
+                            I am looking for: {{ looking_for }} 
                         </h2>
-                        <h2 class="subtitle is-4 box-background-color">
-                            Favorite Show:
+                        <h2 style="color:black" class="is-4 box-background-color">
+                            Favorite Show: {{ question.favoriteTVShows }}
                         </h2>
-                        <h2 class="subtitle is-4 box-background-color">
-                            Favorite Movie:
+                        <h2 style="color:black" class="is-4 box-background-color">
+                            Favorite Movie: {{ question.favoriteMoviesTypes }}
                         </h2>
-                        <h2 class="subtitle is-4 box-background-color">
-                           Taste in Music:
+                        <h2 style="color:black" class="is-4 box-background-color">
+                           Taste in Music: {{ question.musicTypes }}
                         </h2>
-                        <h2 class="subtitle is-4 box-background-color">
+                        <h2 style="color:black" class="is-4 box-background-color">
                             Favorite Book:
                         </h2>
-                        <h2 class="subtitle is-4 box-background-color">
+                        <h2 style="color:black" class="is-4 box-background-color">
                            Hobbies:
                         </h2>
-                        <h2 class="subtitle is-4 box-background-color">
+                        <h2 style="color:black" class="is-4 box-background-color">
                             Idea of Fun:
                         </h2>
                         <br>
+                        </div>
                         <p class="has-text-centered">
                             <a class="button is-primary is-link is-rounded">
                                 Talk Nerdy To Me
                             </a>
                         </p>
-                    </div>
+                    {{!-- </div> --}}
                 </div>
             </div>
         </div>
@@ -146,6 +148,6 @@
             </div>
     </section>
     <script src="../js/bulma.js"></script>
-</body>
+{{!-- </body>
 
-</html>
+</html> --}}
