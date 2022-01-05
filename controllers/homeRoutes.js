@@ -76,7 +76,7 @@ router.get('/login', (req, res) => {
 
 router.get('/newuser', (req, res) => {
   // console.log("test")
-  res.render('newuser')
+  res.render('newUser')
 })
 
 module.exports = router;
