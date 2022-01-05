@@ -34,7 +34,13 @@ const submitFormHandler = async (event) => {
     ethnicity,
     education,
     children,
-    description
+    description,
+    favoriteTVShows,
+    favoriteMoviesTypes,
+    musicTypes,
+    favoriteBooks,
+    Hobbies,
+    ideaOfFun
   }
   let user_id = 5
   let questionObj = {
@@ -47,18 +53,23 @@ const submitFormHandler = async (event) => {
     user_id
   }
   // console.log(questionObj)
-  fetch('/api/questions/newuser',{
-    method:'POST',
-    body: JSON.stringify(questionObj),
-    headers: { 'Content-Type': 'application/json' },
-  })
+  // fetch('/api/questions/newuser',{
+  //   method:'POST',
+  //   body: JSON.stringify(questionObj),
+  //   headers: { 'Content-Type': 'application/json' },
+  // })
   
-// .then((res)=>res.json())
-  .then(fetch('/api/users/newuser',{
+  fetch('/api/users/newuser',{
     method:'POST',
     body: JSON.stringify(userObj),
     headers: { 'Content-Type': 'application/json' },
-  }))
+  }).then((res)=>res.json())
+
+  // .then(fetch('/api/users/newuser',{
+  //   method:'POST',
+  //   body: JSON.stringify(userObj),
+  //   headers: { 'Content-Type': 'application/json' },
+  // }))
   // .then((res)=>res.json())
   .then((data)=>{
     document.location.replace('/main');

@@ -6,11 +6,17 @@
     "last_name": "Golston",
     "gender": "Male",
     "looking_for": "Female",
-    "age": "05/27/1988",
+    "age": "33",
     "ethnicity": "African-American",
     "education": "Bachelors (Undergraduate) Degree",
     "children": "No",
-    "description": "I am here for a good time, not a long time"
+    "description": "I am here for a good time, not a long time",
+    "favoriteTVShows": "The Witcher",
+    "favoriteMoviesTypes": "Sci-Fi, Comedy, Romantic Comedies",
+    "musicTypes": "Hip-Hop, R&B, Funk, Soul",
+    "favoriteBooks": "The Lightning Thief",
+    "ideaOfFun": "Go Kart Racing",
+    "Hobbies": "Playing video games, Watching movies & Tv Shows"
   },
   {
     "email": "something@example.com",
@@ -19,11 +25,19 @@
     "last_name": "Young",
     "gender": "Male",
     "looking_for": "Female",
-    "age": "01-01-1993",
+    "age": "28",
     "ethnicity": "Caucasian",
     "education": "Some College",
     "children": "Yes",
-    "description": "Just a geek looking for another geek"
+    "description": "Just a geek looking for another geek",
+    "favoriteTVShows": "Black Clover, The Boondocks, The Rookie",
+    "favoriteMoviesTypes": "Action, Fantasy, Suspense",
+    "musicTypes": "EDM, Alt-Rock",
+    "favoriteBooks": "Manga",
+    "ideaOfFun":
+      "Playing video games, Cooking new recipes, Studio Ghibli movie marathon",
+    "Hobbies":
+      "Gaming for absurd amounts of time, Watching anime, Learning new coding languages"
   },
   {
     "email": "example@gmail.com",
@@ -32,11 +46,17 @@
     "last_name": "Guerin",
     "gender": "Male",
     "looking_for": "Female",
-    "age": "01-01-1996",
+    "age": "25",
     "ethnicity": "Caucasian",
     "education": "Bachelors (Undergraduate) Degree",
     "children": "No",
-    "description": "I know all the lyrics to Welcome to the Black Parade"
+    "description": "I know all the lyrics to Welcome to the Black Parade",
+    "favoriteTVShows": "Breaking Bad, Its Always Sunny in Philadelphia",
+    "favoriteMoviesTypes": "Dramas, Action",
+    "musicTypes": "Pop punk, Indie Rock",
+    "favoriteBooks": "Bad Blood, Catch and Kill, Into Thin Air",
+    "ideaOfFun": "Chilling with a group of friends",
+    "Hobbies": "Video Games, Chess, Playing Tennis, Watching movies"
   },
   {
     "email": "teeeeeeeeeeee@gmail.com",
@@ -45,10 +65,16 @@
     "last_name": "Nguyen",
     "gender": "Female",
     "looking_for": "Male",
-    "age": "01-01-1986",
+    "age": "35",
     "ethnicity": "Asian",
     "education": "Bachelors (Undergraduate) Degree",
     "children": "No",
-    "description": "Searching for my one true geek love <3"
+    "description": "Searching for my one true geek love <3",
+    "favoriteTVShows": "That 70s Show",
+    "favoriteMoviesTypes": "Comedy, Psychological Thrillers",
+    "musicTypes": "Hip hop, rap, r&b",
+    "favoriteBooks": "The Silent Patient, Where the Crawdads Sing",
+    "ideaOfFun": "Bottomless mimosa Sunday Funday, hanging with   friends",
+    "Hobbies": "Coding, traveling, shopping, eating"
   }
 ]
