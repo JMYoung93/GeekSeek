@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const { User } = require("../../models");
+// fix Nick
 const multer = require("multer");
 
 const storage = multer.diskStorage({
@@ -13,7 +14,7 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
-
+// fix Nick
 router.post("/newuser", async (req, res) => {
   // console.log("test")
   try {
@@ -70,7 +71,7 @@ router.post("/logout", (req, res) => {
     res.status(404).end();
   }
 });
-
+// fix Nick
 router.get("/upload", (req, res) => {
   res.render("upload");
 });
@@ -78,5 +79,5 @@ router.get("/upload", (req, res) => {
 router.post("/upload", upload.single("image"), (req, res) => {
   res.send("Image Uploaded");
 });
-
+// fix Nick
 module.exports = router;
