@@ -50,10 +50,12 @@ router.get('/profile/:id', withAuth, async (req, res) => {
     });
 
     const users = userData.get({ plain: true });
+    const myId = req.session.user_id
     console.log(users)
     res.render('userProfile'
     , {
       ...users,
+      myId,
       logged_in: true
     }
     );

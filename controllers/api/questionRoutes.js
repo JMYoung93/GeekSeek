@@ -1,15 +1,18 @@
 const router = require('express').Router();
-const { Questions } = require('../../models');
-const withAuth = require('../../utils/auth');
+const { User,Questions } = require('../../models');
 
-router.post('/main', withAuth, async (req, res) => {
+router.post('/newuser', async (req, res) => {
+  console.log(req.body)
+  // console.log(req.session.user_id)
+  // const userData = await User.findAll()
+  // const usersHelper = userData.map((user) => user.get({ plain: true }));
+
   try {
-    const newQuestions = await Questions.create({
-      ...req.body,
-      user_id: req.session.user_id,
+    const questionData = await Questions.create({
+      ...req.body
     });
 
-    res.status(200).json(newQuestions);
+    res.status(200).json(questionData);
   } catch (err) {
     res.status(400).json(err);
   }

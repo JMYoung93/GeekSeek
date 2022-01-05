@@ -80,6 +80,24 @@ User.init(
     description: {
       type: DataTypes.STRING,
     },
+    favoriteTVShows: {
+      type: DataTypes.STRING,
+    },
+    favoriteMoviesTypes: {
+      type: DataTypes.STRING,
+    },
+    musicTypes: {
+      type: DataTypes.STRING,
+    },
+    favoriteBooks: {
+      type: DataTypes.STRING,
+    },
+    ideaOfFun: {
+      type: DataTypes.STRING,
+    },
+    Hobbies: {
+      type: DataTypes.STRING,
+    },
   },
   {
     hooks: {
