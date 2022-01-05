@@ -37,12 +37,14 @@ const submitFormHandler = async (event) => {
     description
   }
 
-  // tvShow,
-    // movie,
-    // music,
-    // book,
-    // hobbies,
-    // fun,
+  let questionObj = {
+    tvShow,
+    movie,
+    music,
+    book,
+    hobbies,
+    fun
+  }
   // console.log(userObj)
 
   fetch('/api/users/newuser',{
