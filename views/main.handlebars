@@ -3,6 +3,11 @@
     background: linear-gradient(0.25turn, #6a5ce6, #f2b3fa);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   }
+
+  #cards{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   
 </style>
 
@@ -67,7 +72,7 @@
       </div>
     </section>
     <section class="container">
-      <div class="columns features">
+      <div id="cards" class="columns features">
 
         {{#each users as |user| }}
         {{!-- {{#if user.id != req.session.id}} --}}
