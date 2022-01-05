@@ -50,9 +50,9 @@ const submitFormHandler = async (event) => {
     body: JSON.stringify(userObj),
     headers: { 'Content-Type': 'application/json' },
   }).then((res)=>res.json())
-  // .then((data)=>{
-  //   document.location.replace('/main');
-  // })
+  .then((data)=>{
+    document.location.replace('/main');
+  })
 
 //   form[0].value = ""
 //   form[1].value = ""
