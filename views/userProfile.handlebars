@@ -26,62 +26,56 @@
 </head>
 
 <body>
-    <section class="hero is-fullheight is-default is-bold">
-        <!-- Navbar -->
-            <div class="hero-head">
-                <nav class="navbar">
-                    <div class="container">
-                        <div class="navbar-brand">
-                            <a class="navbar-item" href="../">
-                                <a href='https://postimg.cc/tsVpHJ0v' target='_blank'><img src='https://i.postimg.cc/tsVpHJ0v/geekseek-logo2.png' border='0' alt='geekseek-logo2'/></a>
-                            </a>
-                            <span class="navbar-burger burger" data-target="navbarMenu">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </div>
-                        <div id="navbarMenu" class="navbar-menu">
-                            <div class="navbar-end">
-                                <span class="navbar-item">
-                                    <a class="button is-black is-outlined" href="#">
-                                        <span class="icon">
-                                            <i class="fa fa-home"></i>
-                                        </span>
-                                        <span>Home</span>
-                                    </a>
-                                </span>
-                                <span class="navbar-item">
-                                    <a class="button is-black is-outlined" href="#">
-                                        <span class="icon">
-                                            <i class="fa fa-search"></i>
-                                        </span>
-                                        <span>Search</span>
-                                    </a>
-                                </span>
-                                <span class="navbar-item">
-                                    <a class="button is-black is-outlined" href="#">
-                                        <span class="icon">
-                                            <i class="fa fa-comments"></i>
-                                        </span>
-                                        <span>Messages</span>
-                                    </a>
-                                </span>
-                                <span class="navbar-item">
-                                    <a class="button is-black is-outlined" href="#">
-                                        <span class="icon">
-                                            <i class="fa fa-hand-peace-o"></i>
-                                        </span>
-                                        <span>Log Out</span>
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                </div>
+   <!-- Navbar -->
+   <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <!-- <a class="navbar-item" href="https://bulma.io">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+      </a> -->
+      <a class="navbar-item" href="../">
+        <a href='https://postimg.cc/zbJZ5r6H' target='_blank'><img src='https://i.postimg.cc/zbJZ5r6H/geekseek-logo2.png' alt='geekseek-logo2'/></a>
+    </a>
 
-        <div class="hero-body">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div class="navbar-end">
+        <span class="navbar-item">
+            <a class="button is-black is-outlined is-rounded" href="#">
+                <span class="icon">
+                    <i class="fa fa-home"></i>
+                </span>
+                <span>Home</span>
+            </a>
+        </span>
+        <span class="navbar-item">
+            <a class="button is-black is-outlined is-rounded" href="#">
+                <span class="icon">
+                    <i class="fa fa-user-circle-o"></i>
+                </span>
+                <span>View Profile</span>
+            </a>
+        </span>
+        <span class="navbar-item">
+            <a class="button is-black is-outlined is-rounded" href="#">
+                <span class="icon">
+                    <i class="fa fa-hand-peace-o"></i>
+                </span>
+                <span>Log Out</span>
+            </a>
+        </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Profile photo and user values -->
+    <section class="hero is-fullheight is-default is-bold">
+            <div class="hero-body">
             <div class="container">
                 <h1 class="title is-2 has-text-centered test">
                     Greetings, I am <em>User Name</em>
@@ -89,39 +83,48 @@
                 <div class="columns is-centered">
                     <div class="column is-5">
                         <figure class="image is-4by3">
-                            <img class="user-photo" src="https://picsum.photos/800/600/?random" alt="User Photo">
+                            <img class="geek-photo" src="https://picsum.photos/800/600/?random" alt="User Photo">
                         </figure>
                         <br>
-                        <h2 class="subtitle is-4 box-background-color infoinput">
+                        <h3 class="subtitle is-4 box-background-color">
+                            I am a: 
+                        </h3>
+                        <h3 class="subtitle is-4 box-background-color">
+                            I am looking for a:
+                        </h3>
+                        <h3 class="subtitle is-4 box-background-color infoinput">
                             What kind of geek are you?
-                        </h2>
+                        </h3>
                     </div>
                     <div class="column is-6 is-offset-1">
                        <br>
-                        <h2 class="subtitle is-4 box-background-color">
-                            Gender: 
-                        </h2>
-                        <h2 class="subtitle is-4 box-background-color">
-                            I am looking for:
-                        </h2>
-                        <h2 class="subtitle is-4 box-background-color">
+                        <h3 class="subtitle is-4 box-background-color">
+                            My age is:
+                        </h3>
+                        <h3 class="subtitle is-4 box-background-color">
+                            My ethnicity is:
+                        </h3>
+                        <h3 class="subtitle is-4 box-background-color">
+                            My education level is:
+                        </h3>
+                        <h3 class="subtitle is-4 box-background-color">
                             Favorite Show:
-                        </h2>
-                        <h2 class="subtitle is-4 box-background-color">
+                        </h3>
+                        <h3 class="subtitle is-4 box-background-color">
                             Favorite Movie:
-                        </h2>
-                        <h2 class="subtitle is-4 box-background-color">
+                        </h3>
+                        <h3 class="subtitle is-4 box-background-color">
                            Taste in Music:
-                        </h2>
-                        <h2 class="subtitle is-4 box-background-color">
+                        </h3>
+                        <h3 class="subtitle is-4 box-background-color">
                             Favorite Book:
-                        </h2>
-                        <h2 class="subtitle is-4 box-background-color">
+                        </h3>
+                        <h3 class="subtitle is-4 box-background-color">
                            Hobbies:
-                        </h2>
-                        <h2 class="subtitle is-4 box-background-color">
+                        </h3>
+                        <h3 class="subtitle is-4 box-background-color">
                             Idea of Fun:
-                        </h2>
+                        </h3>
                         <br>
                         <p class="has-text-centered">
                             <a class="button is-primary is-link is-rounded">
