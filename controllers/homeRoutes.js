@@ -13,12 +13,22 @@ router.get('/main', withAuth, async (req, res) => {
           model: Questions
       }], 
     });
-
-    const users = userData.map((user) => user.get({ plain: true }));
-
+    
+    // console.log(req.session.user_id)  
+    const users = []
+    const usersHelper = userData.map((user) => user.get({ plain: true }));
+    for (let i = 0; i < usersHelper.length; i++) {
+      if (usersHelper[i].id != req.session.user_id) {
+        users.push(usersHelper[i])
+      }
+    }
+    const myId = req.session.user_id
+    console.log(users)
+    
   res.render('main'
   , { 
-    users 
+    users, 
+    myId 
   //   logged_in: req.session.logged_in 
   }
   );
@@ -29,25 +39,27 @@ router.get('/main', withAuth, async (req, res) => {
 });
 
 
-router.get('/profile', withAuth, async (req, res) => {
+router.get('/profile/:id', withAuth, async (req, res) => {
 
-  // try {
-  //   const userData = await User.findByPk(req.session.user_id, {
-  //     // attributes: { exclude: ['password'] },
-  //     // include: [{ model: Project }],
-  //   });
+  try {
+    const userData = await User.findByPk(req.params.id, {
+      attributes: { exclude: ['password'] },
+      include: [{
+          model: Questions
+      }], 
+    });
 
-  //   const user = userData.get({ plain: true });
-
+    const users = userData.get({ plain: true });
+    console.log(users)
     res.render('userProfile'
-    // , {
-    //   ...user,
-    //   logged_in: true
-    // }
+    , {
+      ...users,
+      logged_in: true
+    }
     );
-  // } catch (err) {
-  //   res.status(500).json(err);
-  // }
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 router.get('/login', (req, res) => {
@@ -56,7 +68,7 @@ router.get('/login', (req, res) => {
     res.redirect('/main');
     return;
   }
-  // console.log("test")
+  
   res.render('login');
 });
 

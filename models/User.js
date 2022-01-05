@@ -42,20 +42,20 @@ User.init(
     },
     gender: {
       type: DataTypes.ENUM,
-      values: ["male", "female", "other"],
+      values: ["Male", "Female", "Trans", "Non-Binary", "Prefer Not To Say"],
     },
     looking_for: {
       type: DataTypes.ENUM,
-      values: ["male", "female", "other"],
+      values: ["Male", "Female", "I don't care what's in your pants"],
     },
     age: {
-      type: DataTypes.DATE,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     ethnicity: {
       type: DataTypes.ENUM,
       values: [
-        "African American",
+        "African-American",
         "Asian",
         "Caucasian",
         "Hispanic/Latino",
