@@ -51,9 +51,6 @@ h2 {
   width: 300px;
 }
 
-.geek-photo {
-    border-radius: 15% !important;
-}
 
 html,body {
     background: linear-gradient(0.25turn, #6a5ce6, #f2b3fa);
@@ -129,6 +126,11 @@ html,body {
     margin-left: -1.5em;
     color: #2c4869;
   }
+
+  .geek-photo {
+    border-radius: 15% !important;
+}
+
 
 .social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
 .social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }

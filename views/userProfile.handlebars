@@ -1,87 +1,59 @@
-{{!-- <!DOCTYPE html>
-<html>
+<style>
+    html,body {
+    background: linear-gradient(0.25turn, #6a5ce6, #f2b3fa);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  }
+    .geek-photo {
+    border-radius: 15% !important;
+}
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GeekSeek | User Profile</title>
-    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- Bulma Version 0.9.0-->
-    <link rel="stylesheet" href="userProfile.css">
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <style type="text/css">
-        html,
-        body {
-            font-family: 'Open Sans';
-        }
 
-        img {
-            padding: 5px;
-            border: 1px solid #ccc;
-        }
-    </style>
-</head> --}}
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
 
-<<<<<<< HEAD
-{{!-- <body> --}}
-    <section class="hero is-fullheight is-default is-bold">
-        <!-- Navbar -->
-            <div class="hero-head">
-                <nav class="navbar">
-                    <div class="container">
-                        <div class="navbar-brand">
-                            <a class="navbar-item" href="../">
-                                <a href='https://postimg.cc/tsVpHJ0v' target='_blank'><img src='https://i.postimg.cc/tsVpHJ0v/geekseek-logo2.png' border='0' alt='geekseek-logo2'/></a>
-                            </a>
-                            <span class="navbar-burger burger" data-target="navbarMenu">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </div>
-                        <div id="navbarMenu" class="navbar-menu">
-                            <div class="navbar-end">
-                                <span class="navbar-item">
-                                    <a class="button is-black is-outlined" href="#">
-                                        <span class="icon">
-                                            <i class="fa fa-home"></i>
-                                        </span>
-                                        <span>Home</span>
-                                    </a>
-                                </span>
-                                <span class="navbar-item">
-                                    <a class="button is-black is-outlined" href="#">
-                                        <span class="icon">
-                                            <i class="fa fa-search"></i>
-                                        </span>
-                                        <span>Search</span>
-                                    </a>
-                                </span>
-                                <span class="navbar-item">
-                                    <a class="button is-black is-outlined" href="#">
-                                        <span class="icon">
-                                            <i class="fa fa-comments"></i>
-                                        </span>
-                                        <span>Messages</span>
-                                    </a>
-                                </span>
-                                <span class="navbar-item">
-                                    <a class="button is-black is-outlined" href="#">
-                                        <span class="icon">
-                                            <i class="fa fa-hand-peace-o"></i>
-                                        </span>
-                                        <span>Log Out</span>
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                </div>
-=======
+.box-background-color {
+  background-color: white;
+  padding: 1rem;
+}
+
+.test{
+  margin-left: 10%;
+}
+
+.infoinput {
+  height: 33%;
+}
+
+.subtitle {
+  border-radius: 35px;
+}
+
+@media screen and (min-width: 1088px){
+  .navbar-center{
+      display:flex;
+      justify-content: stretch;
+      align-items: stretch;
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-direction: row;
+  }
+  .navbar-link,.navbar-item{
+    align-items: center;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: center;
+  }
+    .navbar-dropdown .navbar-item{
+      justify-content:left;
+    }	
+  }
+
+</style>
+
 <body>
    <!-- Navbar -->
    <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -92,7 +64,6 @@
       <a class="navbar-item" href="../">
         <a href='https://postimg.cc/zbJZ5r6H' target='_blank'><img src='https://i.postimg.cc/zbJZ5r6H/geekseek-logo2.png' alt='geekseek-logo2'/></a>
     </a>
->>>>>>> aa35094b57d9380db9ba2f671ecb3a5fc8dee981
 
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
@@ -157,30 +128,6 @@
                     {{!-- <div style="font-color:black"> --}}
                     <div class="column is-6 is-offset-1">
                        <br>
-<<<<<<< HEAD
-                        <h2 style="color:black" class="is-4 box-background-color">
-                            Gender: {{ gender }}
-                        </h2>
-                        <h2 style="color:black" class="is-4 box-background-color">
-                            I am looking for: {{ looking_for }} 
-                        </h2>
-                        <h2 style="color:black" class="is-4 box-background-color">
-                            Favorite Show: {{ question.favoriteTVShows }}
-                        </h2>
-                        <h2 style="color:black" class="is-4 box-background-color">
-                            Favorite Movie: {{ question.favoriteMoviesTypes }}
-                        </h2>
-                        <h2 style="color:black" class="is-4 box-background-color">
-                           Taste in Music: {{ question.musicTypes }}
-                        </h2>
-                        <h2 style="color:black" class="is-4 box-background-color">
-                            Favorite Book:
-                        </h2>
-                        <h2 style="color:black" class="is-4 box-background-color">
-                           Hobbies:
-                        </h2>
-                        <h2 style="color:black" class="is-4 box-background-color">
-=======
                         <h3 class="subtitle is-4 box-background-color">
                             My age is:
                         </h3>
@@ -206,16 +153,16 @@
                            Hobbies:
                         </h3>
                         <h3 class="subtitle is-4 box-background-color">
->>>>>>> aa35094b57d9380db9ba2f671ecb3a5fc8dee981
                             Idea of Fun:
                         </h3>
                         <br>
-                        </div>
-                        <p class="has-text-centered">
+                         <p class="has-text-centered">
                             <a class="button is-primary is-link is-rounded">
                                 Talk Nerdy To Me
                             </a>
                         </p>
+                        </div>
+                       
                     {{!-- </div> --}}
                 </div>
             </div>
