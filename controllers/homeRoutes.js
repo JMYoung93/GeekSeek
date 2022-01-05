@@ -13,11 +13,7 @@ router.get('/main', withAuth, async (req, res) => {
           model: Questions
       }], 
     });
-<<<<<<< HEAD
-
-=======
     
->>>>>>> 8ef40434daa3a61eb1dc22c5a5047838de398f09
     // console.log(req.session.user_id)  
     const users = []
     const usersHelper = userData.map((user) => user.get({ plain: true }));
@@ -27,11 +23,8 @@ router.get('/main', withAuth, async (req, res) => {
       }
     }
     const myId = req.session.user_id
-<<<<<<< HEAD
     console.log(users)
-=======
-
->>>>>>> 8ef40434daa3a61eb1dc22c5a5047838de398f09
+    
   res.render('main'
   , { 
     users, 
@@ -60,13 +53,8 @@ router.get('/profile/:id', withAuth, async (req, res) => {
     console.log(users)
     res.render('userProfile'
     , {
-<<<<<<< HEAD
       ...users,
       logged_in: true
-=======
-      ...users
-      // logged_in: true
->>>>>>> 8ef40434daa3a61eb1dc22c5a5047838de398f09
     }
     );
   } catch (err) {

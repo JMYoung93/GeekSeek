@@ -4,40 +4,45 @@ const submitFormHandler = async (event) => {
   event.preventDefault();
   
   
-  let name = document.querySelector('#name').value.trim()
+  let first_name = document.querySelector('#first-name').value.trim()
+  let last_name = document.querySelector('#last-name').value.trim()
   let email = document.querySelector('#email').value.trim()
-  let username = document.querySelector('#username').value.trim()
+  let password = document.querySelector('#password').value.trim()
   let gender = document.querySelector('#gender').value
-  let seekingGender = document.querySelector('#seeking_gender').value
-  let tvPref = document.querySelector('#tvpref').value.trim()
+  let looking_for = document.querySelector('#seeking_gender').value
+  let age = document.querySelector('#age').value.trim()
+  let ethnicity = document.querySelector('#ethnicity').value
+  let education = document.querySelector('#education').value
   let tvShow = document.querySelector('#tvshow').value.trim()
   let movie = document.querySelector('#movie').value.trim()
   let music = document.querySelector('#music').value.trim()
-  let reading = document.querySelector('#reading').value.trim()
   let book = document.querySelector('#book').value.trim()
   let hobbies = document.querySelector('#hobbies').value.trim()
   let fun = document.querySelector('#fun').value.trim()
-  let geek = document.querySelector('#geek').value.trim()
+  let description = document.querySelector('#geek').value.trim()
 
-  if(!email  || !username || !name ) return ;
-
-  let userObj = { 
+  if(!email  || !first_name || !last_name || !password || !age ) return ;
+  let children = "Yes"
+  let userObj = {
     email ,
-    name , 
-    username,
+    password,
+    first_name,
+    last_name, 
     gender,
-    seekingGender,
-    tvPref,
-    tvShow,
-    movie,
-    music,
-    reading,
-    book,
-    hobbies,
-    fun,
-    geek
+    looking_for,
+    age,
+    ethnicity,
+    education,
+    children,
+    description
   }
-  
+
+  // tvShow,
+    // movie,
+    // music,
+    // book,
+    // hobbies,
+    // fun,
   // console.log(userObj)
 
   fetch('/api/users/newuser',{
@@ -45,9 +50,9 @@ const submitFormHandler = async (event) => {
     body: JSON.stringify(userObj),
     headers: { 'Content-Type': 'application/json' },
   }).then((res)=>res.json())
-  .then((data)=>{
-    document.location.replace('/main');
-  })
+  // .then((data)=>{
+  //   document.location.replace('/main');
+  // })
 
 //   form[0].value = ""
 //   form[1].value = ""

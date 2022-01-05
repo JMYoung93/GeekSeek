@@ -4,25 +4,25 @@
     "password": "password12345",
     "first_name": "Nicholas",
     "last_name": "Golston",
-    "gender": "male",
-    "looking_for": "female",
+    "gender": "Male",
+    "looking_for": "Female",
     "age": "05/27/1988",
-    "ethnicity": "African American",
+    "ethnicity": "African-American",
     "education": "Bachelors (Undergraduate) Degree",
-    "children": "no",
-    "description": "I am her for a good time, not a long time"
+    "children": "No",
+    "description": "I am here for a good time, not a long time"
   },
   {
     "email": "something@example.com",
     "password": "password12345",
     "first_name": "Jeff",
     "last_name": "Young",
-    "gender": "male",
-    "looking_for": "female",
+    "gender": "Male",
+    "looking_for": "Female",
     "age": "01-01-1993",
     "ethnicity": "Caucasian",
     "education": "Some College",
-    "children": "yes",
+    "children": "Yes",
     "description": "Just a geek looking for another geek"
   },
   {
@@ -30,12 +30,12 @@
    "password": "password12345",
     "first_name": "Gabriel",
     "last_name": "Guerin",
-    "gender": "male",
-    "looking_for": "female",
+    "gender": "Male",
+    "looking_for": "Female",
     "age": "01-01-1996",
     "ethnicity": "Caucasian",
     "education": "Bachelors (Undergraduate) Degree",
-    "children": "no",
+    "children": "No",
     "description": "I know all the lyrics to Welcome to the Black Parade"
   },
   {
@@ -43,12 +43,12 @@
     "password": "password12345",
     "first_name": "Thao",
     "last_name": "Nguyen",
-    "gender": "female",
-    "looking_for": "male",
+    "gender": "Female",
+    "looking_for": "Male",
     "age": "01-01-1986",
     "ethnicity": "Asian",
     "education": "Bachelors (Undergraduate) Degree",
-    "children": "no",
+    "children": "No",
     "description": "Searching for my one true geek love <3"
   }
 ]
