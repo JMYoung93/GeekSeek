@@ -13,12 +13,12 @@ const submitFormHandler = async (event) => {
   let age = document.querySelector('#age').value.trim()
   let ethnicity = document.querySelector('#ethnicity').value
   let education = document.querySelector('#education').value
-  let tvShow = document.querySelector('#tvshow').value.trim()
-  let movie = document.querySelector('#movie').value.trim()
-  let music = document.querySelector('#music').value.trim()
-  let book = document.querySelector('#book').value.trim()
-  let hobbies = document.querySelector('#hobbies').value.trim()
-  let fun = document.querySelector('#fun').value.trim()
+  let favoriteTVShows = document.querySelector('#tvshow').value.trim()
+  let favoriteMoviesTypes = document.querySelector('#movie').value.trim()
+  let musicTypes = document.querySelector('#music').value.trim()
+  let favoriteBooks = document.querySelector('#book').value.trim()
+  let Hobbies = document.querySelector('#hobbies').value.trim()
+  let ideaOfFun = document.querySelector('#fun').value.trim()
   let description = document.querySelector('#geek').value.trim()
 
   if(!email  || !first_name || !last_name || !password || !age ) return ;
@@ -36,22 +36,30 @@ const submitFormHandler = async (event) => {
     children,
     description
   }
-
+  let user_id = 5
   let questionObj = {
-    tvShow,
-    movie,
-    music,
-    book,
-    hobbies,
-    fun
+    favoriteTVShows,
+    favoriteMoviesTypes,
+    musicTypes,
+    favoriteBooks,
+    Hobbies,
+    ideaOfFun,
+    user_id
   }
-  // console.log(userObj)
-
-  fetch('/api/users/newuser',{
+  // console.log(questionObj)
+  fetch('/api/questions/newuser',{
+    method:'POST',
+    body: JSON.stringify(questionObj),
+    headers: { 'Content-Type': 'application/json' },
+  })
+  
+// .then((res)=>res.json())
+  .then(fetch('/api/users/newuser',{
     method:'POST',
     body: JSON.stringify(userObj),
     headers: { 'Content-Type': 'application/json' },
-  }).then((res)=>res.json())
+  }))
+  // .then((res)=>res.json())
   .then((data)=>{
     document.location.replace('/main');
   })

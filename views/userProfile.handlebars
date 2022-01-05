@@ -74,7 +74,7 @@
 
       <div class="navbar-end">
         <span class="navbar-item">
-            <a class="button is-black is-outlined is-rounded" href="#">
+            <a class="button is-black is-outlined is-rounded" href="/main">
                 <span class="icon">
                     <i class="fa fa-home"></i>
                 </span>
@@ -82,7 +82,7 @@
             </a>
         </span>
         <span class="navbar-item">
-            <a class="button is-black is-outlined is-rounded" href="#">
+            <a class="button is-black is-outlined is-rounded" href="/profile/{{myId}}">
                 <span class="icon">
                     <i class="fa fa-user-circle-o"></i>
                 </span>
@@ -90,7 +90,7 @@
             </a>
         </span>
         <span class="navbar-item">
-            <a class="button is-black is-outlined is-rounded" href="#">
+            <a class="button is-black is-outlined is-rounded" id="logout">
                 <span class="icon">
                     <i class="fa fa-hand-peace-o"></i>
                 </span>
@@ -116,44 +116,44 @@
                         </figure>
                         <br>
                         <h3 class="subtitle is-4 box-background-color">
-                            I am a: 
+                            I am a: {{gender}}
                         </h3>
                         <h3 class="subtitle is-4 box-background-color">
-                            I am looking for a:
+                            I am looking for a: {{looking_for}}
                         </h3>
                         <h3 class="subtitle is-4 box-background-color infoinput">
-                            What kind of geek are you?
+                            What kind of geek are you? {{description}}
                         </h3>
                     </div>
                     {{!-- <div style="font-color:black"> --}}
                     <div class="column is-6 is-offset-1">
                        <br>
                         <h3 class="subtitle is-4 box-background-color">
-                            My age is:
+                            My age is: {{age}}
                         </h3>
                         <h3 class="subtitle is-4 box-background-color">
-                            My ethnicity is:
+                            My ethnicity is: {{ethnicity}}
                         </h3>
                         <h3 class="subtitle is-4 box-background-color">
-                            My education level is:
+                            My education level is: {{education}}
                         </h3>
                         <h3 class="subtitle is-4 box-background-color">
-                            Favorite Show:
+                            Favorite Show: {{ question.favoriteTVShows }}
                         </h3>
                         <h3 class="subtitle is-4 box-background-color">
-                            Favorite Movie:
+                            Favorite Movie: {{ question.favoriteMoviesTypes }}
                         </h3>
                         <h3 class="subtitle is-4 box-background-color">
-                           Taste in Music:
+                           Taste in Music: {{ question.musicTypes }}
                         </h3>
                         <h3 class="subtitle is-4 box-background-color">
-                            Favorite Book:
+                            Favorite Book: {{ question.favoriteBooks }}
                         </h3>
                         <h3 class="subtitle is-4 box-background-color">
-                           Hobbies:
+                           Hobbies: {{ question.Hobbies }}
                         </h3>
                         <h3 class="subtitle is-4 box-background-color">
-                            Idea of Fun:
+                            Idea of Fun: {{ question.ideaOfFun }}
                         </h3>
                         <br>
                          <p class="has-text-centered">
@@ -181,6 +181,7 @@
             </div>
     </section>
     <script src="../js/bulma.js"></script>
+    <script src="/js/logout.js"></script>
 {{!-- </body>
 
 </html> --}}
